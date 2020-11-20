@@ -43,7 +43,7 @@ mvn clean install
 ````
 http://localhost:8080/analytica-1.0/
 ````
-
+5. Import [Postman collection](https://github.com/subishsubash/api-analytica/blob/main/API-Analytica.postman_collection.json)
 
 
 
