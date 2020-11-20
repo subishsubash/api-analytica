@@ -34,16 +34,15 @@
 <h2>Deployment</h2>
 
 1. Install MySql server and let the server run in port 3306, ensure the username & password as root.
-2. Build the maven project 
+2. Execute the SQL to create database and tables https://github.com/subishsubash/api-analytica/blob/main/SQL
+3. Build the maven project 
 ````
 mvn clean install
 ````
-3. Deploy the war in tomcat server 
+4. Deploy the war in tomcat server 
 ````
 http://localhost:8080/analytica-1.0/
 ````
-
-----
 
 
 
