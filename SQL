@@ -29,4 +29,3 @@ CREATE TABLE IF NOT EXISTS `response_delay` (
 )
 COLLATE='utf8mb4_0900_ai_ci'
 ;
-s
