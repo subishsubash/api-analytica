@@ -34,7 +34,7 @@
 <h2>Deployment</h2>
 
 1. Install MySql server and let the server run in port 3306, ensure the username & password as root.
-2. Execute the SQL to create database and tables https://github.com/subishsubash/api-analytica/blob/main/SQL
+2. Execute the [SQL](https://github.com/subishsubash/api-analytica/blob/main/SQL) to create database and tables.
 3. Build the maven project 
 ````
 mvn clean install
