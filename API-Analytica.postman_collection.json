@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "c97aed88-d42b-45ad-8811-d346c8f7f670",
+		"name": "Analytica",
+		"description": "Temenos Hackathon - API analytica is a product, It store the details of every request comes from end user to t24. By monitoring the IRIS layer and store into the analytica database. API calls from the UI(client) to Analytica, which response as graph data and represents as various graphs by use of highchart.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Version",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/analytica-1.0/v0.1/api/version",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"analytica-1.0",
+						"v0.1",
+						"api",
+						"version"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Graphdata - Timeline",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/analytica-1.0/v0.1/api/graphdata/1m",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"analytica-1.0",
+						"v0.1",
+						"api",
+						"graphdata",
+						"1m"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Entry",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"apiName\": \"v1.0//api/deAddress\",\r\n\t\"responseDelay\": \"2\",\r\n\t\"requestDate\" : \"2019-11-12 10:04:20\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/analytica-1.0/v0.1/api/entry",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"analytica-1.0",
+						"v0.1",
+						"api",
+						"entry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Graph Data - Yearly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/analytica-1.0/v0.1/api/graphdata/2019",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"analytica-1.0",
+						"v0.1",
+						"api",
+						"graphdata",
+						"2019"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Graph Details - Hourly",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/analytica-1.0/v0.1/api/graphdatahourly?from=2019-09-19&to=2019-10-19",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"analytica-1.0",
+						"v0.1",
+						"api",
+						"graphdatahourly"
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2019-09-19"
+						},
+						{
+							"key": "to",
+							"value": "2019-10-19"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Graph Data - Days",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/analytica-1.0/v0.1/api/graphdatadays/3w",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"analytica-1.0",
+						"v0.1",
+						"api",
+						"graphdatadays",
+						"3w"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
