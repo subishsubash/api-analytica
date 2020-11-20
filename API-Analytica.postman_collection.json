@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "c97aed88-d42b-45ad-8811-d346c8f7f670",
-		"name": "Analytica",
+		"_postman_id": "2c3af7d6-2469-431f-86d6-f621dc17bef9",
+		"name": "API-Analytica",
 		"description": "Temenos Hackathon - API analytica is a product, It store the details of every request comes from end user to t24. By monitoring the IRIS layer and store into the analytica database. API calls from the UI(client) to Analytica, which response as graph data and represents as various graphs by use of highchart.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -180,6 +180,28 @@
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4a0158bd-6acd-4f2d-b171-bdfa8e70639e",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a6a1d150-d86c-4121-80dd-4dc1c48d1735",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	],
 	"protocolProfileBehavior": {}
