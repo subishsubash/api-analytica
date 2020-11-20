@@ -1,0 +1,32 @@
+CREATE DATABASE IF NOT EXISTS `analytica`;
+
+USE analytica;
+
+CREATE TABLE IF NOT EXISTS `api_master` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`api_name` VARCHAR(200) NULL
+)
+COLLATE='utf8mb4_0900_ai_ci'
+;
+
+CREATE TABLE IF NOT EXISTS `api_details` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`api_master` INT NOT NULL,
+	`no_of_hits` INT NOT NULL,
+	`entry_timestamp` TIMESTAMP NOT NULL,
+	FOREIGN KEY (api_master) REFERENCES api_master(id)
+)
+COLLATE='utf8mb4_0900_ai_ci'
+;
+
+
+CREATE TABLE IF NOT EXISTS `response_delay` (
+	`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	`api_master` INT NOT NULL,
+	`delay_time` VARCHAR(50) NOT NULL,
+	`entry_timestamp` TIMESTAMP NOT NULL,
+	FOREIGN KEY (api_master) REFERENCES api_master(id)
+)
+COLLATE='utf8mb4_0900_ai_ci'
+;
+s
